@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>旅遊日語練習</title>
+  <style>
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      padding: 1em;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #eee;
+    }
+    button {
+      padding: 6px 12px;
+      background-color: #007aff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:active {
+      background-color: #005ecb;
+    }
+  </style>
+</head>
+<body>
+  <h1>旅遊日語練習（點擊播放語音）</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>中文</th>
+        <th>日文</th>
+        <th>播放</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td>你好。</td>
+        <td>こんにちは。</td>
+        <td><button onclick="speak('こんにちは。')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>請問洗手間在哪裡？</td>
+        <td>トイレはどこですか？</td>
+        <td><button onclick="speak('トイレはどこですか？')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>這個多少錢？</td>
+        <td>これはいくらですか？</td>
+        <td><button onclick="speak('これはいくらですか？')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>我想要這個。</td>
+        <td>これをください。</td>
+        <td><button onclick="speak('これをください。')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>這附近有便利商店嗎？</td>
+        <td>この近くにコンビニはありますか？</td>
+        <td><button onclick="speak('この近くにコンビニはありますか？')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>請幫我拍一張照片。</td>
+        <td>写真を撮ってください。</td>
+        <td><button onclick="speak('写真を撮ってください。')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>這個可以試穿嗎？</td>
+        <td>これ、試着してもいいですか？</td>
+        <td><button onclick="speak('これ、試着してもいいですか？')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>這道菜有什麼推薦的嗎？</td>
+        <td>この料理、おすすめはありますか？</td>
+        <td><button onclick="speak('この料理、おすすめはありますか？')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>我不會說日語。</td>
+        <td>日本語は話せません。</td>
+        <td><button onclick="speak('日本語は話せません。')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>請給我菜單。</td>
+        <td>メニューをください。</td>
+        <td><button onclick="speak('メニューをください。')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>我需要幫助。</td>
+        <td>助けが必要です。</td>
+        <td><button onclick="speak('助けが必要です。')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>這個怎麼用？</td>
+        <td>これはどうやって使いますか？</td>
+        <td><button onclick="speak('これはどうやって使いますか？')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>我聽不懂。</td>
+        <td>わかりません。</td>
+        <td><button onclick="speak('わかりません。')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>請慢慢說。</td>
+        <td>ゆっくり話してください。</td>
+        <td><button onclick="speak('ゆっくり話してください。')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>這是什麼？</td>
+        <td>これは何ですか？</td>
+        <td><button onclick="speak('これは何ですか？')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>我迷路了。</td>
+        <td>道に迷いました。</td>
+        <td><button onclick="speak('道に迷いました。')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>請帶我去這裡。</td>
+        <td>ここへ連れて行ってください。</td>
+        <td><button onclick="speak('ここへ連れて行ってください。')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>我想預訂一間房。</td>
+        <td>部屋を予約したいです。</td>
+        <td><button onclick="speak('部屋を予約したいです。')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>最近的地鐵站在哪裡？</td>
+        <td>一番近い地下鉄の駅はどこですか？</td>
+        <td><button onclick="speak('一番近い地下鉄の駅はどこですか？')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>可以使用信用卡嗎？</td>
+        <td>クレジットカードは使えますか？</td>
+        <td><button onclick="speak('クレジットカードは使えますか？')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>我想要一份不含肉的餐點。</td>
+        <td>肉なしの料理をお願いします。</td>
+        <td><button onclick="speak('肉なしの料理をお願いします。')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>請給我一杯水。</td>
+        <td>お水をください。</td>
+        <td><button onclick="speak('お水をください。')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>這趟旅程需要多久？</td>
+        <td>この旅はどのくらい時間がかかりますか？</td>
+        <td><button onclick="speak('この旅はどのくらい時間がかかりますか？')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>我對花生過敏。</td>
+        <td>私はピーナッツアレルギーがあります。</td>
+        <td><button onclick="speak('私はピーナッツアレルギーがあります。')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>這附近有藥局嗎？</td>
+        <td>この近くに薬局はありますか？</td>
+        <td><button onclick="speak('この近くに薬局はありますか？')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>什麼時候可以入住？</td>
+        <td>いつチェックインできますか？</td>
+        <td><button onclick="speak('いつチェックインできますか？')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>我想換錢。</td>
+        <td>お金を両替したいです。</td>
+        <td><button onclick="speak('お金を両替したいです。')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>這附近有什麼好玩的地方嗎？</td>
+        <td>この近くに楽しい場所はありますか？</td>
+        <td><button onclick="speak('この近くに楽しい場所はありますか？')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>可以拍照嗎？</td>
+        <td>写真を撮ってもいいですか？</td>
+        <td><button onclick="speak('写真を撮ってもいいですか？')">🔊</button></td>
+      </tr>
+    
+      <tr>
+        <td>謝謝你的幫忙。</td>
+        <td>お世話になりました。</td>
+        <td><button onclick="speak('お世話になりました。')">🔊</button></td>
+      </tr>
+    
+    </tbody>
+  </table>
+
+  <script>
+    function speak(text) {
+      if (!('speechSynthesis' in window)) {
+        alert("您的瀏覽器不支援語音播放。");
+        return;
+      }
+
+      const synth = window.speechSynthesis;
+
+      // 確保使用日語語音
+      const voices = synth.getVoices();
+      const jaVoice = voices.find(voice => voice.lang.startsWith('ja'));
+
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = "ja-JP";
+      utterance.rate = 0.9;
+
+      if (jaVoice) {
+        utterance.voice = jaVoice;
+      }
+
+      synth.cancel();
+      synth.speak(utterance);
+    }
+
+    // 某些瀏覽器需要先觸發 getVoices 才會正確載入語音列表
+    window.speechSynthesis.onvoiceschanged = function() {
+      window.speechSynthesis.getVoices();
+    };
+  </script>
+</body>
+</html>
